@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is a student record-->
+ <parent>
+<student>
+    <personal>
+    <name>John Doe</name>
+    <age>22</age>
+    <course>Computer science</course>
+    </personal>
+</student>
+<student id="101">
+    <name>John Doe</name>
+</student>
+</parent>

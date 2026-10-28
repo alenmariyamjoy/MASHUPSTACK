@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="yourname"></p>
+    <p id="yourage"></p>
+    <p id="anumber"></p>
+    <script>
+       /* let x= 10;
+        var y = 55.35;
+        const j = 3.14;
+        let a = "my name is alen"*/
+
+        let name = prompt("Enter the name: ")
+        let age = Number(prompt("Enter the age: "))
+        let numb = Number(prompt("Enter a number: "))
+        document.getElementById("yourname").innerHTML = "The user entered name is: " +name;
+        document.getElementById("yourage").innerHTML = "The user entered age is: " +age;
+        document.getElementById("anumber").innerHTML = "The user entered number is: " +numb;
+        console.log(name); 
+        console.log(age);
+        console.log(numb);
+
+    </script>
+</body>
+</html>
