@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="first"></p>
+    <p id="second"></p>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+    <script>
+        let a = Number(prompt("Enter the first number: "));
+        let b = Number(prompt("Enter the second number: "));
+        document.getElementById("first").innerHTML ="The first number is: " +a;
+        document.getElementById("second").innerHTML ="The second number is: " +b;
+        document.getElementById("add").innerHTML = "The addittion of two numbers is: " +(a+b);
+        document.getElementById("sub").innerHTML = "The subtraction of two number is: " +(a-b);
+        document.getElementById("mul").innerHTML = "The multiplication of two number is: " +(a*b);
+        document.getElementById("div").innerHTML = "The division of two number is: " +(a/b);
+        
+        console.log("The addittion of two numbers is: " +(a+b))
+        console.log("The subtraction of two number is: " +(a-b))
+        console.log("The multiplication of two number is: " +(a*b))
+        console.log("The division of two number is: " +(a/b))
+        </script>
+</body>
+</html>

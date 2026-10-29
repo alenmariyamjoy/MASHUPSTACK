@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>task 1</h2>
+    <p id="gre"></p>
+    <p id="eq"></p>
+    <p id="gr"></p>
+    <p id="ore"></p>
+     
+    <script>
+        var a = 15;
+        var b = 10;
+        console.log((a>b)&&(b>5) +" a is greater than b AND b is greater than 5.") ;
+        document.getElementById("gre").innerHTML = ((a>b)&&(b>5)) +" a is greater than b AND b is greater than 5." ;
+        console.log((a<b)||(b==10) +" a is less than b OR b is equal to 10.") ;
+        document.getElementById("eq").innerHTML = ((a<b)||(b==10)) +" a is less than b OR b is equal to 10.";
+        console.log((a==15)&&(b>a) +" a is equal to 15 AND b is greater than a.") ;
+        document.getElementById("gr").innerHTML = ((a==15)&&(b>a)) +" a is equal to 15 AND b is greater than a.";
+        console.log((a<20)||(b<5)  +" a is less than 20 OR b is less than 5.");
+        document.getElementById("ore").innerHTML = ((a<20)||(b<5)) +" a is less than 20 OR b is less than 5.";
+       </script>
+    <h2>task 2</h2>
+   <p id="check"></p>
+    <script>
+        var mark = 85;
+        var attendance = 95;
+        var isEligible = document.getElementById("check").innerHTML = ((mark>=80)&&(attendance>=90)) + " The student is eligible";
+        console.log(isEligible +" The student is eligible.")
+    </script>
+    <h2>task 3</h2>
+    <p id="movie"></p>
+    <script>
+        let age = 60;
+        let isStudent = false;
+        var isEligibleForDiscount = document.getElementById("movie").innerHTML = ((age>=60)||(isStudent==true)) +" cinema offers a special ticket discount if true";
+        console.log(((age>=60)||(isStudent==true)) +" cinema offers a special ticket discount if true") ;
+    </script>
+    <h2>task 4</h2>
+    <p id="ac"></p>
+    <p id="bl"></p>
+    <p id="ema"></p>
+    <p id="acc"></p>
+    <p id="blo"></p>
+    <p id="email"></p>
+    <script>
+        let isLoggedIn = true;
+        let isBlocked = false;
+        let isEmailVerified = true;
+        document.getElementById("ac").innerHTML = (isLoggedIn) +" original value";
+        document.getElementById("bl").innerHTML = (isBlocked) +" original value";
+        document.getElementById("ema").innerHTML = (isEmailVerified) +" original value";
+        var x = document.getElementById("acc").innerHTML = (!isLoggedIn) +" inverted value.";
+        var y = document.getElementById("blo").innerHTML = (!isBlocked) +" inverted value.";
+        var z = document.getElementById("email").innerHTML = (!isEmailVerified) +" inverted value.";
+        console.log(isLoggedIn +" original value") ;
+        console.log(isBlocked +" original value") ;
+        console.log(isEmailVerified +" original value") ;
+        console.log(!isLoggedIn +" inverted value.") ;
+        console.log(!isBlocked +" inverted value.");
+        console.log(!isEmailVerified +" inverted value.") ;
+    </script>
+    <h2>task 5</h2>
+    <p id="premium"></p>
+    <script>
+        let orderAmount = 700;
+        let isPremiumMember = true;
+        var isFreeDelivery = document.getElementById("premium").innerHTML = ((orderAmount>=1000)||((isPremiumMember==true)&&(orderAmount>=500))) +" Eligible for Online Shopping";
+        console.log((orderAmount>=1000)||((isPremiumMember==true)&&(orderAmount>=500)) +" Eligible for Online Shopping") ;
+    </script>
+
+    <h2>task 6</h2>
+    <p id="vo"></p>
+    <script>
+        var voteage = 17;
+        var VotingStatus = (voteage>=18)? "Eligible to vote":"Not eligible to vote";
+        document.getElementById("vo").innerHTML = VotingStatus +" has Voting Eligibility";
+        console.log(VotingStatus  +" has Voting Eligibility");
+    </script>
+
+    <h2>task 7</h2>
+    <p id="pos"></p>
+    <script>
+        var number = -12;
+        var deter =(number>=0)? "Positive number":"Negative number";
+        document.getElementById("pos").innerHTML = deter +" The number is positivite else negative";
+        console.log(deter +" The number is positivite else negative") ;
+    </script>
+
+    <h2>task 8</h2>
+    <p id="exam"></p>
+    <p id="mar"></p>
+    <script>
+        let marks = 50;
+        var grade = (marks>=90)?"A":(marks>=75&&marks<=89)?"B":(marks>=50&&marks<=74)?"C":(marks<50)?"D":pass ;
+        var result = grade + " " +((marks>=40)?"pass":"fail");
+        document.getElementById("exam").innerHTML = result +" have Pass or Fail";
+        document.getElementById("mar").innerHTML = marks +" given mark";
+        console.log(result +" havePass or Fail");
+        console.log(marks +" given mark");
+    </script>
+
+    <h2>task 9</h2>
+    <p id="celc"></p>
+    <p id="temp"></p>
+    <script>
+        var temperature = 32;
+        var cel = (temperature<25)?"Cool":(temperature>=25&&temperature<=35)?"Warm":(temperature>35)? "Very Hot":"Normal Temperature";
+        document.getElementById("celc").innerHTML = cel +" The Temperature Checked";
+        document.getElementById("temp").innerHTML = temperature +" value of temperature";
+        console.log(cel +" The Temperature Checked") ;
+        console.log(temperature +" value of temperature") ;
+    </script>
+
+    <h2>task 10</h2>
+    <p id="mes"></p>
+    <script>
+        let isLoggedInn = false;
+        var message = (!isLoggedInn)? "Welcome back":"Please login first";
+        document.getElementById("mes").innerHTML = message +" Login Status Message";
+        console.log(message +" Login Status Message") ;
+    </script>
+</body>
+</html>

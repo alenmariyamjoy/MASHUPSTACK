@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="city"></p>
+    <p id="int"></p>
+    <p id="dec"></p>
+    <p id="str"></p>
+    <p id="datype"></p>
+    <p id="dis"></p>
+    <p id="disp"></p>
+    <p id="fav"></p>
+    <p id="sc"></p>
+    <p id="rem"></p>
+    <p id="av"></p>
+    <p id="pow"></p>
+    <p id="assig"></p>
+    <script>
+        var x = 6 ;
+        var y = 3.7;
+        let z = "Welcome to javascript";
+        let k = true;
+        var j=10;
+        j = 82;
+        var s = 7;
+        var S = 8.9;
+        var m =prompt("enter the name: ")
+        var i = prompt("Enter the age: ");
+        var g =Number(prompt("enter the first number: "));
+        var d = Number(prompt("enter the second number: "));
+        var w =prompt("Enter favourite programming language: ");
+        document.getElementById("name").innerHTML = "alen";
+        document.getElementById("age").innerHTML = "22";
+        document.getElementById("city").innerHTML = "kottarakkara";
+        document.getElementById("int").innerHTML = x;
+        document.getElementById("dec").innerHTML = y;
+        document.getElementById("str").innerHTML = z;
+        document.getElementById("datype").innerHTML = k;
+        document.getElementById("dis").innerHTML = "Javascript is easy to learn";
+        document.getElementById("disp").innerHTML = m +"Hello alen!";
+        document.getElementById("fav").innerHTML = "my name is" +m+ "and age is" +i+ "and my favourite programming language is" +w ;
+        document.getElementById("sc").innerHTML = "the square root of the number is" +g**2 + "and the cube is" +g**3 ;
+        document.getElementById("rem").innerHTML = (g%d);
+        document.getElementById("av").innerHTML = (g+d)/2;
+        document.getElementById("pow").innerHTML = (g ** d);
+        document.getElementById("assig").innerHTML = ((g+d)*2)+"and "+((g+d)*2)==(g+d*2);
+        console.log("javascript is easy to learn");
+        window.alert("javascript is easy to learn");
+        document.writeln(j);
+        document.writeln(s);
+        document.writeln(S);
+        document.writeln(g+d);
+    </script>
+</body>
+</html>

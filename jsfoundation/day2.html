@@ -9,21 +9,31 @@
     <p id="yourname"></p>
     <p id="yourage"></p>
     <p id="anumber"></p>
+    <h1 id="inst"></h1>
     <script>
        /* let x= 10;
         var y = 55.35;
         const j = 3.14;
         let a = "my name is alen"*/
 
-        let name = prompt("Enter the name: ")
+        let named = prompt("Enter the name: ")
         let age = Number(prompt("Enter the age: "))
         let numb = Number(prompt("Enter a number: "))
-        document.getElementById("yourname").innerHTML = "The user entered name is: " +name;
+        let inters = prompt("Enter your interest:")
+        //let a = Number(prompt(Enter the first number:));
+        //let b = number(prompt(Enter the second number: ))
+        document.getElementById("yourname").innerHTML = "The user entered name is: " + named;
         document.getElementById("yourage").innerHTML = "The user entered age is: " +age;
         document.getElementById("anumber").innerHTML = "The user entered number is: " +numb;
-        console.log(name); 
-        console.log(age);
-        console.log(numb);
+        document.getElementById("inst").innerHTML = "your full name is " + named + "and interest is " + inters;
+        //document.getElementById("yourname").innerHTML = "Your full name is " + named + " and interest is " + inters;
+        //document.getElementById("yourage").innerHTML = "Your full name is " + named + " and interest is " + inters;
+
+        console.log("The user entered value is: " +named); 
+        console.log("The user entered age is: " +age);
+        console.log("The user enterd number is: " +numb);
+       console.log("The user name is " , name + "and interest is ", inters);
+       console.log("The enterd name is ", named + "and interest is", inters)
 
     </script>
 </body>
