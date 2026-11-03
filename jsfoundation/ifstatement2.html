@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>task 1</h1>
+    <p id="fever"></p>
+    <script>
+        let temperature = 38.5;
+        var patientStatus;
+        if(temperature<0||temperature>40){
+            patientStatus = "Invalid Temperature"
+        }
+        else{
+        if(temperature<36){
+            patientStatus = "Low Temperature";
+        }
+        else if(temperature>=36&&temperature<=37.5){
+            patientStatus = "Normal";
+        }
+        else if(temperature>37.5&&temperature<=38.5){
+            patientStatus = "Mild fever";
+        }
+        else{
+            patientStatus = "High Fever";
+        }
+        }
+        document.getElementById("fever").innerHTML = (temperature+" "+"°C"+" "+patientStatus)
+    </script>
+
+    <h1>task 2</h1>
+    <p id="loan"></p>
+    <p id="noloan"></p>
+    <p id="noage"></p>
+    <p id="nosalary"></p>
+    <script>
+        let age = 60;
+        let monthlySalary = 50000;
+        let creditScore = 750;
+        if(age>=21){
+            if(monthlySalary>=25000){
+                if(creditScore>=700){
+                    document.getElementById("loan").innerHTML = "The loan is eligible for approval.";
+                }
+        
+        else{
+             document.getElementById("noloan").innerHTML =  "Loan Rejected: Low Credit Score.";
+        }
+    }
+        else {
+            document.getElementById("nosalary").innerHTML =
+                "Loan Rejected: Insufficient Salary.";
+        }
+
+    }
+    else {
+        document.getElementById("noage").innerHTML =
+            "Loan Rejected: Age must be at least 21.";
+    }
+   
+    </script>
+
+    <h1>task 3</h1>
+    <p id="rail"></p>
+    <script>
+        let passengerAge = 60;
+        let ticketFare = 500;
+        var finalFare;
+        var fare;
+        if(passengerAge<5){
+            fare = "free",finalFare = "0";
+        }else if(passengerAge>=5&&passengerAge<=12){
+            fare = " 50% of original fare",finalFare = (ticketFare*50)/100;
+        }else if(passengerAge>=13&&passengerAge<=59){
+            fare = "Full Fare",finalFare = ticketFare;
+        }else if(passengerAge>=60){
+            fare = " 70% of original fare",finalFare = (ticketFare*70)/100;
+        }
+        document.getElementById("rail").innerHTML = ("The passenger age is = "+" "+passengerAge+" "+" <br>and the fare is"+" "+fare+" "+" <br>and the final fare is = "+" "+finalFare);
+            
+    </script>
+
+    <h1>task 4</h1>
+    <p id="data"></p>
+    <p id="rem"></p>
+    <script>
+        let dataUsed = 110;
+        var status;
+        var Remainingdata;
+        var totaldata = 100;
+        if(dataUsed<0){
+            status = "Invalid data";
+        }
+        if(dataUsed<50){
+            status ="Normal Usage";
+        }else if(dataUsed>=50&&dataUsed<=79){
+            status = "Moderate Usage";
+        }else if(dataUsed>=80&&dataUsed<=99){
+            status = " Warning: Data Almost Exhausted";
+        }else {
+            status = " Data Limit Exceeded";
+        }
+        
+        Remainingdata = (totaldata-dataUsed);
+    
+        document.getElementById("data").innerHTML = ("Monthly Data Limit: "+totaldata+"<br>"+"Data Used:"+dataUsed);
+    
+        document.getElementById("rem").innerHTML = ("Remaining Data:"+Remainingdata+"<br>"+"Usage Status:"+status);
+        
+    </script>
+
+    <h1>task 5</h1>
+    <p id="park"></p>
+    <script>
+        let parkingHours = 6;
+        var parkingfee;
+        if(parkingHours<=0){
+            "Invalid"
+        }
+        if (parkingHours==1){
+            parkingfee = 20;
+        }else if(parkingHours>=2&&parkingHours<=5){
+            parkingfee = 20+((parkingHours-1)*10)
+        }else if(parkingHours>5){
+            parkingfee = 60+((parkingHours-5)*15)
+        }
+         document.getElementById("park").innerHTML = (" parking duration"+parkingHours+"<br>"+"final fee"+parkingfee);
+    </script>
+
+    <h1>task 6</h1>
+    <p id="leave"></p>
+    <script>
+        let availableLeaves = 4;
+        let requestedLeaves = 6;
+        let isOnNoticePeriod = false;
+        let managerApproval = true;
+        let approved;
+        if(availableLeaves>=5){
+            if(!isOnNoticePeriod){
+                if(requestedLeaves>=1&&requestedLeaves<=3){
+                    "Request Approved";
+                }
+                else if(requestedLeaves>3){
+                    if(managerApproval == true){
+                        approved = "Request for leave is approved";
+                    }
+                    else{
+                        approved = "Rejected manager not approved"
+                    }
+                }
+            }
+                else{
+                    approved = "Rejected : on notice period"
+                }
+            }
+            else {
+                approved  ="Rejected : no leave avilable"
+            }
+        
+        document.getElementById("leave").innerHTML = ("Available Leaves:" +availableLeaves+"<br>"+"Requested Leaves:"+ requestedLeaves+"<br>"+"Notice Period:" +isOnNoticePeriod+"<br>"+"Manager Approval:"+ managerApproval+"<br>"+"Leave Status:" +approved)
+    </script>
+
+    <h1>task 7</h1>
+    <p id="bill"></p>
+    <script>
+        let unitsConsumed = 800;
+        let rate;
+        if(unitsConsumed<0){
+            rate = "invalid";
+        }else if(unitsConsumed==0){
+            rate = "no usage";
+        }
+        else if(unitsConsumed <= 100){
+            rate = unitsConsumed*1.50;
+        }
+           else if(unitsConsumed <= 200){
+                rate =(100*1.50)+((unitsConsumed-100)*2.50);
+           }
+              else if(unitsConsumed <= 300){
+                    rate = (100*1.50)+(100*2.50)+((unitsConsumed-200)*4);
+              }
+                    else{
+                        rate =(100*1.50)+(100*2.50)+(100*4)+((unitsConsumed-300)*6);
+                    }
+                
+                 document.getElementById("bill").innerHTML =("Units Consumed: " + unitsConsumed + "<br>"+"Electricity Bill: "  + rate);
+
+    </script>
+
+    <h1>task 8</h1>
+    <p id="eli"></p>
+    <script>
+        let ages = 30;
+        let monthlyIncome = 30000;
+        let hasRiskFlag = false;
+        var passed;
+        if(ages>=18&&age<=60){
+           if(monthlyIncome>=20000){
+                if(!hasRiskFlag){
+                    passed = "eligible";
+                }
+                else{
+                    passed = "not eligible has riskflag";
+                }
+                }
+                else {
+                    passed = "not eligible monthly income is low";
+            }
+        }
+        else{
+            passed = "not eligible age is invalid";
+        }
+        document.getElementById("eli").innerHTML = ("The age is: "+ages+"<br>"+"the monthly income is: "+monthlyIncome+"<br>"+"and hasrisk: "+hasRiskFlag+"<br>"+"is passed: "+passed);
+    </script>
+
+   
+    <h1>task 9</h1>
+    <p id="cart"></p>
+    <script>
+        let cartItems = 3;
+        let orderAmount = 1800;
+        let isPaymentSuccessful = true;
+        let isAddressVerified = true;
+        let payamount = 0;
+        let finalamount = 0;
+        let orderstatus;
+        if(cartItems>=1){
+            if(isPaymentSuccessful){
+                if(isAddressVerified){
+                    if(orderAmount>=2000){
+                       payamount = "Free Delivery"
+                    }
+                    else{
+                        payamount = 50;
+                    }
+                    finalamount = orderAmount+payamount;
+                    orderstatus = "order confirmed";
+                }
+                else{
+                    "Address is not verified";
+                }
+            }
+            else{
+                "payment is not successfull";
+            }
+        }
+        else{
+            "cart item is empty";
+        }
+        
+         document.getElementById("cart").innerHTML = ("Cart Items: "+cartItems+"<br>"+"Order Amount: "+orderAmount+"<br>"+"Payment Successful: "+isPaymentSuccessful+"<br>"+"Address Verified:"+isAddressVerified+"<br>Delivery Charges: "+payamount+"<br>final amount:"+finalamount+"<br>order status:"+orderstatus);
+    </script>
+
+     <h1>task 10</h1>
+    <p id="scholarship"></p>
+    <script>
+        let marks = 95;
+        let familyIncome = 400000;
+        var result;
+
+    if (marks < 0 || marks > 100 || familyIncome < 0) {
+        result = "Invalid Input";
+    }
+    else if (marks >= 90 && familyIncome < 300000) {
+        result = "Merit Scholarship";
+    }
+    else if (marks >= 80 && familyIncome < 200000) {
+        result = "Academic Scholarship";
+    }
+    else {
+        result = "Not scholarship";
+    }
+
+    document.getElementById("scholarship").innerHTML =
+        "Marks: " + marks +
+        "<br>Family Income: " + familyIncome +
+        "<br>Scholarship: " + result;
+    </script>
+
+</body>
+</html>
+

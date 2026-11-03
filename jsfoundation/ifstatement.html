@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 1</h1>
+    <p id="vote"></p>
+    <script>
+        var age = 41;
+        if(age>=18){
+            console.log("You are eligible to vote.");
+            document.getElementById("vote").innerHTML = " You are eligible to vote.";
+          
+        }else{
+            document.getElementById("vote").innerHTML = " You are not eligible to vote.";
+            console.log("You are not eligible to vote")
+        }
+    </script>
+
+     <h1>Task 2</h1>
+    <p id="pos"></p>
+    <script>
+        var number = 6;
+        if(number>0){
+            document.getElementById("pos").innerHTML = " The number is positive.";
+            console.log("The number is positive.");
+        }else{
+            document.getElementById("pos").innerHTML = " The number is negative or zero.";
+            console.log("The number is negative or zero.");
+        }
+    </script>
+
+    <h1>Task 3</h1>
+    <p id="dis"></p>
+    <p id="low"></p>
+    <p id="lowe"></p>
+    <p id="hig"></p>
+    <p id="noteli"></p>
+    <script>
+        var purchaseAmount = 10000;
+        if(purchaseAmount>2000){
+            document.getElementById("dis").innerHTML = " You are eligible for a discount.";
+            console.log( "You are eligible for a discount.");
+        }else if(purchaseAmount=1500)
+        {
+           document.getElementById("low").innerHTML =  " The purchaseamount is 1500 ,You are not eligible for a discount.";
+            console.log( " The purchaseamount is 1500 ,You are not eligible for a discount. "); 
+        }else if(purchaseAmount=2000)
+        {
+             document.getElementById("lowe").innerHTML =  " The purchaseamount is 2000 ,You are not eligible for a discount. ";
+            console.log( " The purchaseamount is 2000 ,You are not eligible for a discount."); 
+        }else if(purchaseAmount=1000)
+        {
+             document.getElementById("hig").innerHTML =  " The purchaseamount is 2001,You are eligible for a discount ";
+            console.log( " The purchaseamount is 2001,You are eligible for a discount "); 
+        }else{
+             document.getElementById("noteli").innerHTML =  " not eligible";
+            console.log( " not eligible "); 
+        }
+    </script> 
+
+    <h1>Task 4</h1>
+    <p id="eve"></p>
+    <script>
+        var numbers = 24;
+        if(numbers%2==0){
+            document.getElementById("eve").innerHTML = " The number is even.";
+            console.log(" The number is even.");
+        }
+    </script>
+
+    <h1>Task 5</h1>
+    <p id="att"></p>
+    <script>
+        var attendance = 82;
+        if(attendance>=75){
+            document.getElementById("att").innerHTML =  " Attendance requirement satisfied.";
+            console.log( " Attendance requirement satisfied.");
+        }
+    </script>
+
+    <h1>Task 6</h1>
+    <p id="pass"></p>
+    <p id="fail"></p>
+    <script>
+        var marks = 35;
+        if(marks>=40){
+            document.getElementById("pass").innerHTML = " Congratulations! You passed.";
+            console.log( " Congratulations! You passed.");
+        }else{
+            document.getElementById("fail").innerHTML = "Sorry! You failed.";
+            console.log(  "Sorry! You failed.");
+        }
+    </script>
+
+    <h1>Task 7</h1>
+    <p id="posi"></p>
+    <p id="negi"></p>
+    <script>
+        var numberr = -12
+        if(numberr>=0){
+            document.getElementById("posi").innerHTML = "The number is non-negative.";
+            console.log(  "The number is non-negative.");
+        }else{
+            document.getElementById("negi").innerHTML = "The number is negative.";
+            console.log(  "The number is negative.");
+        }
+    </script>
+
+    <h1>task 8</h1>
+    <p id="ent"></p>
+    <p id="inv"></p>
+    <script>
+        let enteredUsername = "student123";
+        let registeredUsername = "student123";
+        if(enteredUsername == registeredUsername){
+            document.getElementById("ent").innerHTML =  "Username verified.";
+            console.log(   "Username verified.");
+        }else{
+            document.getElementById("inv").innerHTML =  "Invalid username.";
+            console.log(  "Invalid username.");
+        }
+        
+    </script>
+
+    <h1>task 9</h1>
+    <p id="gr"></p>
+    <p id="sm"></p>
+    <script>
+        let a = 10;
+        let b = 10;
+        if(a>b){
+            document.getElementById("gr").innerHTML = "A is greater.";
+            console.log("A is greater.");
+        }else{
+            document.getElementById("sm").innerHTML =  "B is greater or both numbers are equal.";
+            console.log(  "B is greater or both numbers are equal.");
+        }
+    </script>
+
+    <h1>task 10</h1>
+    <p id="or"></p>
+    <p id="der"></p>
+    <script>
+        var orderAmount = 450;
+        if(orderAmount>=500){
+            document.getElementById("or").innerHTML = "Free delivery available.";
+            console.log("Free delivery available.");
+        }else{
+            document.getElementById("der").innerHTML = "Delivery charges apply.";
+            console.log( "Delivery charges apply.");
+        }
+    </script>
+
+    <h1>task 11</h1>
+    <p id="result"></p>
+    
+    <script>
+         var marked = 86;
+        var grade;
+
+        if (marked >= 90 && marked <= 100) {
+            grade = "A Grade";
+
+        } else if (marked >= 80 && marked < 90) {
+            grade = "B Grade";
+
+        } else if (marked >= 70 && marked < 80) {
+            grade = "C Grade";
+
+        } else if (marked >= 40 && marked < 70) {
+            grade = "D Grade";
+
+        } else if (marked >= 0 && marked < 40) {
+            grade = "F Grade";
+
+        } else {
+            grade = "Invalid Marks";
+        }
+
+        document.getElementById("result").innerHTML =
+            "Marks: " + marked + "<br>" +
+            "Grade: " + grade;
+
+        console.log("Marks: " + marked);
+        console.log("Grade: " + grade);
+
+    </script>
+
+ <h1>Task 12</h1>
+
+    <p id="electricity"></p>
+
+    <script>
+
+        var unitsConsumed  = 86;
+        var consumptionCategory;
+
+        if (unitsConsumed<100) {
+            consumptionCategory = "Low Consumption";
+
+        } else if (unitsConsumed >= 100 && unitsConsumed < 300) {
+            consumptionCategory = "Moderate Consumption";
+
+        } else {
+            consumptionCategory = "High Consumption";
+
+        }
+
+        document.getElementById("electricity").innerHTML =
+            "units: " + unitsConsumed + " " +"category: " + consumptionCategory;
+
+        console.log("units: " + unitsConsumed);
+        console.log("category: " + consumptionCategory);
+
+    </script>
+
+
+ <h1>Task 13</h1>
+
+    <p id="temperature"></p>
+
+    <script>
+    var temperatures = 24;
+    var classification;
+
+    if (temperatures < 10) {
+        classification = "Very Cold";
+    }
+    else if (temperatures < 20) {
+        classification = "Cold";
+    }
+    else if (temperatures < 30) {
+        classification = "Pleasant";
+    }
+    else {
+        classification = "Hot";
+    }
+
+    console.log("Temperature: " + temperatures );
+    console.log("Classification: " + classification);
+
+    document.getElementById("temperature").innerHTML ="Temperatures: " + temperatures + " " +"Classification: " + classification;
+</script>
+
+ <h1>Task 14</h1>
+
+    <p id="calculator"></p>
+
+<script>
+    let num1 = 20;
+    let num2 = 5;
+    let operator = "*";
+    let result;
+
+    if (operator == "+") {
+        result = num1 + num2;
+    }
+    else if (operator == "-") {
+        result = num1 - num2;
+    }
+    else if (operator == "*") {
+        result = num1 * num2;
+    }
+    else if (operator == "/") {
+        if (num2 == 0) {
+            result = "Cannot divide by zero";
+        }
+        else {
+            result = num1 / num2;
+        }
+    }
+    else {
+        result = "Invalid operator";
+    }
+
+    console.log(num1 + " " + operator + " " + num2 + " = " + result);
+
+    document.getElementById("calculator").innerHTML =
+        num1 + " " + operator + " " + num2 + " = " + result;
+</script>
+    
+     <h1>Task 15</h1>
+
+ <p id="bonus"></p>
+
+<script>
+    let performanceScore = 82;
+    let salary = 30000;
+
+    let bonusPercentage;
+    let bonusAmount;
+
+    if (performanceScore < 0 || performanceScore > 100) {
+        bonusPercentage = "Invalid Score";
+        bonusAmount = "Not Applicable";
+    }
+    else if (performanceScore >= 90) {
+        bonusPercentage = 20;
+    }
+    else if (performanceScore >= 75) {
+        bonusPercentage = 10;
+    }
+    else if (performanceScore >= 60) {
+        bonusPercentage = 5;
+    }
+    else {
+        bonusPercentage = 0;
+    }
+
+    if (typeof bonusPercentage == "number") {
+        bonusAmount = salary * bonusPercentage / 100;
+    }
+
+    console.log("Performance Score: " + performanceScore);
+    console.log("Bonus Percentage: " + bonusPercentage);
+    console.log("Bonus Amount: " + bonusAmount);
+
+    document.getElementById("bonus").innerHTML =
+        "Performance Score: " + performanceScore +"Bonus Percentage: " + bonusPercentage +"Bonus Amount: " + bonusAmount;
+</script>
+
+<h1>Task 16</h1>
+<p id="atm"></p>
+
+<script>
+    let balance = 5000;
+    let withdrawalAmount = 2000;
+    let isAccountActive = true;
+
+    let message;
+
+    if (isAccountActive) {
+
+        if (withdrawalAmount > 0) {
+
+            if (withdrawalAmount <= balance) {
+                balance = balance - withdrawalAmount;
+                message = "Withdrawal Successful";
+            }
+            else {
+                message = "Insufficient Balance";
+            }
+
+        }
+        else {
+            message = "Invalid Withdrawal Amount";
+        }
+
+    }
+    else {
+        message = "Account is Inactive";
+    }
+
+    console.log(message);
+    console.log("Remaining Balance: " + balance);
+
+    document.getElementById("atm").innerHTML =
+        message + "<br>Remaining Balance: " + balance;
+</script>
+
+     <h1>Task 17</h1>
+
+  <p id="admission"></p>
+
+<script>
+    let markss = 75;
+    let hasPassedEntrance = true;
+
+    let admissionResult;
+
+    if (markss >= 60) {
+
+        if (hasPassedEntrance) {
+            admissionResult = "Eligible for Admission";
+        }
+        else {
+            admissionResult = "Failed Entrance Examination";
+        }
+
+    }
+    else {
+        admissionResult = "Not Qualified - Insufficient Marks";
+    }
+
+    console.log("Marks: " + markss);
+    console.log(admissionResult);
+
+    document.getElementById("admission").innerHTML =
+        "Marks: " + markss +" " + admissionResult;
+</script>
+
+     <h1>Task 18</h1>
+
+   <p id="shopping"></p>
+
+<script>
+    let purchaseAmounts = 4000;
+
+    let discountPercentage;
+    let discountAmount;
+    let finalAmount;
+
+    if (purchaseAmounts >= 5000) {
+        discountPercentage = 20;
+    }
+    else if (purchaseAmounts >= 3000) {
+        discountPercentage = 15;
+    }
+    else if (purchaseAmounts >= 1000) {
+        discountPercentage = 10;
+    }
+    else {
+        discountPercentage = 0;
+    }
+
+    discountAmount = purchaseAmounts * discountPercentage / 100;
+
+    finalAmount = purchaseAmounts - discountAmount;
+
+    console.log("Purchase Amount: " + purchaseAmounts);
+    console.log("Discount: " + discountPercentage + " ");
+    console.log("Discount Amount: " + discountAmount);
+    console.log("Final Amount: " + finalAmount);
+
+    document.getElementById("shopping").innerHTML =
+        "Purchase Amount: " + purchaseAmounts +"Discount: " + discountPercentage + " " +"Discount Amount: " + discountAmount + "Final Amount: " + finalAmount;
+</script>
+
+     <h1>Task 19</h1>
+
+   <p id="traffic"></p>
+
+<script>
+    let signalColor = "red";
+    let instruction;
+
+    if (signalColor == "red") {
+        instruction = "Stop";
+    }
+    else if (signalColor == "yellow") {
+        instruction = "Get Ready";
+    }
+    else if (signalColor == "green") {
+        instruction = "Go";
+    }
+    else {
+        instruction = "Invalid Signal";
+    }
+
+    console.log("Signal Color: " + signalColor);
+    console.log("Instruction: " + instruction);
+
+    document.getElementById("traffic").innerHTML =
+        "Signal Color: " + signalColor +"Instruction: " + instruction;
+</script>
+
+     <h1>Task 20</h1>
+
+    <p id="evaluation"></p>
+
+<script>
+    let attendances = 85;
+    let performanceScores = 92;
+
+    let evaluation;
+
+    if (attendances < 75) {
+        evaluation = "Insufficient Attendance";
+    }
+    else {
+
+        if (performanceScores >= 90) {
+            evaluation = "Excellent";
+        }
+        else if (performanceScores >= 75) {
+            evaluation = "Good";
+        }
+        else if (performanceScores >= 50) {
+            evaluation = "Average";
+        }
+        else {
+            evaluation = "Needs Improvement";
+        }
+
+    }
+
+    console.log("Attendance: " + attendances + "");
+    console.log("Performance Score: " + performanceScores);
+    console.log("Evaluation: " + evaluation);
+
+    document.getElementById("evaluation").innerHTML =
+        "Attendance: " + attendances + "" +"Performance Score: " + performanceScores +"Evaluation: " + evaluation;
+</script>
+
+</body>
+</html>

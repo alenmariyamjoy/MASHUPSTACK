@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>task 1</h1>
+    <p id="num"></p>
+    <script>
+        var i;
+        for(i=0;i<=10;i++)
+    {
+        document.getElementById("num").innerHTML += (i + "<br>");
+    }
+    </script>
+
+    <h1>task 2</h1>
+    <p id="rev"></p>
+    <script>
+        var i;
+        for(i=10;i>=0;i--)
+    {
+        document.getElementById("rev").innerHTML += (i + "<br>");
+    }
+    </script>
+
+    <h1>task 3</h1>
+    <p id="eve"></p>
+    <script>
+        var i;
+        var mod;
+        for (i=1; i<=50; i++){
+            //if(i%2==0)
+            i%2==0 && (document.getElementById("eve").innerHTML += (i + "<br>"));
+        }
+    </script>
+
+    <h1>task 4</h1>
+    <p id="odd"></p>
+    <script>
+        var i;
+        for(i=1;i<=50;i++){
+            //if(i%2!=0)
+            i%2!=0 && (document.getElementById("odd").innerHTML += (i + "<br>"))
+        }
+    </script>
+
+    <h1>task 5</h1>
+    <p id="mul"></p>
+    <script>
+        var k = 7;
+        for(i=1;i<=10;i++){
+            //var m = i*k;
+            document.getElementById("mul").innerHTML += (i +" "+"*"+ k+ " "+"="+ i*k +"<br>")
+        }
+    </script>
+
+    <h1>task 6</h1>
+    <p id="sums"></p>
+    <script>
+        var i;
+        var sum =0;
+        for(i=1;i<=10;i++){
+            sum += sum+i;
+            document.getElementById("sums").innerHTML = ("The total sum is"+ " ="+ " "+sum + "<br>")
+        }
+    </script>
+
+    <h1>task 7</h1>
+    <p id="sueve"></p>
+    <p id="summ"></p>
+    <script>
+        var i;
+        var sum =0;
+        for(i=1;i<=20;i++){
+           // if (i%2==0) {
+                //sum = sum+i;
+           // }
+          var k = i%2==0; //&& (document.getElementById("sueve").innerHTML += (i + "<br>"));
+          sum = sum+(i*k);
+           document.getElementById("summ").innerHTML = (sum + "<br>")
+        }
+    </script>
+
+    <h1>task 8</h1>
+    <p id="gnum"></p>
+    <p id="tmul"></p>
+    <p id="head"></p>
+    <script>
+        var i;
+        var number = 5;
+        for(i=1;i<=10;i++){
+            var multiplied = number*i;
+            document.getElementById("gnum").innerHTML += (i +" "+"*"+ number+ " "+"="+multiplied + "<br>");
+            multiplied%3==0 && (document.getElementById("tmul").innerHTML += ("multiples that are divisible by 3 as well"+" "+ "="+" " +multiplied  + "<br>"));
+           /*if(multiplied%3==0)
+           {
+            document.getElementById("tmul").innerHTML += (multiplied  + "<br>");
+           }*/
+        }
+
+       /* var number = 5;
+
+    for (var i = 1; i <= 10; i++) {
+        var multiplied = number * i;
+
+        document.getElementById("gnum").innerHTML +=
+            i + " * " + number + " = " + multiplied + "<br>";
+
+        multiplied % 3 == 0 &&
+        (document.getElementById("tmul").innerHTML += multiplied + "<br>");*/
+    </script>
+
+<h1>task 9</h1>
+<p id="factr"></p>
+<script>
+    var i;
+    var number = 5;
+    var factorial = 1;
+    for(i=1;i<=number;i++){
+        factorial = factorial*i;
+    }
+        document.getElementById("factr").innerHTML += ("the factorial of"+" "+number+" "+"is"+" "+"="+" "+factorial  + "<br>");
+    
+</script>
+
+
+<h1>task 10</h1>
+<p id="divs"></p>
+<script>
+    var i;
+    var number = 5;
+    var counter = 0;
+    for(i=1;i<=100;i++){
+       /* if (i % number == 0) {
+            counter++;
+
+            document.getElementById("divs").innerHTML += i + "<br>";
+        }*/
+       i%number==0 &&  ( counter++,document.getElementById("divs").innerHTML += (i  +"<br>"));
+       
+    }
+    document.getElementById("divs").innerHTML +=
+        "Total count = " + counter;
+</script>
+</body>
+</html>

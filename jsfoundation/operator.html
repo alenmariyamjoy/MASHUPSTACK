@@ -21,7 +21,7 @@
         document.getElementById("eq").innerHTML = ((a<b)||(b==10)) +" a is less than b OR b is equal to 10.";
         console.log((a==15)&&(b>a) +" a is equal to 15 AND b is greater than a.") ;
         document.getElementById("gr").innerHTML = ((a==15)&&(b>a)) +" a is equal to 15 AND b is greater than a.";
-        console.log((a<20)||(b<5)  +" a is less than 20 OR b is less than 5.");
+        console.log(((a < 20) || (b < 5)) + " a is less than 20 OR b is less than 5.");
         document.getElementById("ore").innerHTML = ((a<20)||(b<5)) +" a is less than 20 OR b is less than 5.";
        </script>
     <h2>task 2</h2>
@@ -95,12 +95,12 @@
     <p id="exam"></p>
     <p id="mar"></p>
     <script>
-        let marks = 50;
+        let marks = 20;
         var grade = (marks>=90)?"A":(marks>=75&&marks<=89)?"B":(marks>=50&&marks<=74)?"C":(marks<50)?"D":pass ;
-        var result = grade + " " +((marks>=40)?"pass":"fail");
+        var result = grade + " " +((marks>40)?"pass":"fail");
         document.getElementById("exam").innerHTML = result +" have Pass or Fail";
         document.getElementById("mar").innerHTML = marks +" given mark";
-        console.log(result +" havePass or Fail");
+        console.log(result +" have Pass or Fail");
         console.log(marks +" given mark");
     </script>
 
