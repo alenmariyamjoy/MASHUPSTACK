@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f2;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+               "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+.card {
+  width: 600px;
+  max-width: calc(100% - 2rem);
+  margin: 15vh auto 0;
+  padding: 2em;
+  background-color: #fdfdff;
+  border-radius: 0.5em;
+  box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+}
+
+h1 { margin-top: 0; }
+
+p { line-height: 1.5; margin: 1em 0 0; }
+
+@media (max-width: 700px) {
+  .card { margin-top: 2rem; }
+}

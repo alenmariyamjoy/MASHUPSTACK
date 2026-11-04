@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 5px;
+        }
+
+        .container {
+            border: 5px ridge gray;
+            padding: 80px 50px 50px;
+            min-height: 250px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 25px;
+            margin: 0;
+        }
+
+        input {
+            width: 170px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 6px;
+            text-align: left;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        th a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .actions {
+            white-space: nowrap;
+        }
+
+        .view {
+            color: #03a9f4;
+        }
+
+        .edit {
+            color: orange;
+        }
+
+        .delete {
+            color: red;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .pagination {
+            display: flex;
+            gap: 5px;
+        }
+
+        .pagination span {
+            background-color: #eee;
+            padding: 6px 11px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .pagination .active {
+            background-color: #03a9f4;
+            color: white;
+        }
+
+        .pagination .button {
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <label>
+            show
+            <select>
+                <option>5</option>
+                <option>10</option>
+                <option>25</option>
+            </select>
+            entries
+        </label>
+
+        <h2>Customer <b>Details</b></h2>
+
+        <input type="search" placeholder="search">
+
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name ⬍</th>
+                <th>Address</th>
+                <th>City ⬍</th>
+                <th>Pincode</th>
+                <th>Country ⬍</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Thomas Hardy</td>
+                <td>89 Chiar­sco Rd.</td>
+                <td>Portland</td>
+                <td>91219</td>
+                <td>USA</td>
+                <td class="actions">
+                    <span class="view">🔵</span>
+                    <span class="edit">🖉</span>
+                    <span class="delete">▤</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Maria Anders</td>
+                <td>Obere Str.57</td>
+                <td>Berlin</td>
+                <td>12209</td>
+                <td>Germany</td>
+                <td class="actions">
+                    <span class="view">🔵</span>
+                    <span class="edit">🖉</span>
+                    <span class="delete">▤</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Fran Wilson</td>
+                <td>C/Araquil,67</td>
+                <td>Madrid</td>
+                <td>28023</td>
+                <td>Spain</td>
+                <td class="actions">
+                    <span class="view">🔵</span>
+                    <span class="edit">🖉</span>
+                    <span class="delete">▤</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Dominic Perrier</td>
+                <td>25,rue Lauriston</td>
+                <td>Paris</td>
+                <td>75016</td>
+                <td>France</td>
+                <td class="actions">
+                    <span class="view">🔵</span>
+                    <span class="edit">🖉</span>
+                    <span class="delete">▤</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Martin Blank</td>
+                <td>Via Monteblanco 34</td>
+                <td>Turin</td>
+                <td>10100</td>
+                <td>Italy</td>
+                <td class="actions">
+                    <span class="view">🔵</span>
+                    <span class="edit">🖉</span>
+                    <span class="delete">▤</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+
+        <span>Showing 5 out of 25 entries</span>
+
+        <div class="pagination">
+            <span class="button">Previous</span>
+            <span>1</span>
+            <span>2</span>
+            <span class="active">3</span>
+            <span>4</span>
+            <span>5</span>
+            <span class="button">Next</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
