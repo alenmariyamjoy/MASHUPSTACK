@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.first::first-line{
+            font-weight: bold;
+        }
+        p.first::first-letter {
+            font-size: xx-large;
+            color: crimson;
+        }
+        blockquote::before {
+            content: "\201C";
+            padding: 6px;
+            
+        }
+        a {
+            text-decoration: none;
+        }
+        a:link {
+            color: darkolivegreen;
+        }
+        a:visited {
+            color: gold;
+        }
+        a:hover {
+            color: midnightblue;
+        }
+        div + h4
+         {
+            color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Five Habits of a Productive Developer</h1>
+    <h3 style="text-align: center;">By Meera Nair</h3>
+    <p class="first">Good developers are not always the fastest typists. <br>They plan before they code, read error messages carefully, and take short breaks to stay focused. Over time, these small habits save hours of work and make projects easier to maintain.</p>
+    <blockquote style="border: 7px solid black; padding: 3px; margin: 3px;">Clean code is written for humans first and computers second.</blockquote>
+    <p>To keep improving, check out the <a href="https://www.geeksforgeeks.org/html/html-tutorial/" target="_blank">HTML Guide</a>, the <a href="https://www.w3schools.com/cssref/index.php" target="_blank">CSS Reference</a>, or the <a href="https://www.w3schools.com/jsref/jsref_reference.asp" target="_blank">JavaScript Handbook</a></p>
+    <div>
+    <h4>Daily Practices</h4>
+    </div>
+    <h4 class="second">Helpful Tools</h4>
+    
+</body>
+</html>
