@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .blog-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .blog-post {
+            flex: 1 1 300px;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* 1. Links that start with https -> red */
+        a[href^="https"] {
+            color: red;
+        }
+
+        /* 2. Images ending in .jpg -> rounded top-right and bottom-left */
+        img[src$=".jpg"] {
+            border-radius: 0 20px 0 20px; /* TL TR BR BL */
+        }
+
+        /* 3a. Small screens: stack posts and reduce font size */
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+            .blog-section {
+                flex-direction: column;
+            }
+            .blog-post {
+                flex: none;
+                width: 100%;
+            }
+        }
+
+        /* 3b. Portrait orientation: lightyellow background */
+        @media (orientation: portrait) {
+            .blog-section {
+                background-color: lightyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Featured Blog Section</h1>
+
+    <section class="blog-section">
+        <article class="blog-post">
+    <h2>The Future of Artificial Intelligence</h2> <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_4iJtvtLiwVQgnQMlwoGD-jxHvZfTTg3m6ca-X0O7JA&s=10" alt="The Future of Artificial Intelligence" width="500px" height="200px"><br>
+    <a class="col" href="https://builtin.com/artificial-intelligence/artificial-intelligence-future">Read More</a> <br> <br>
+       </article>
+       <article class="blog-post"></article>
+    <h2>Top 5 Web Development Trends</h2> <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYIISsz17NYVqrrNwqLFcPcCW3H9EhjUat4gkck4y9Ww&s=10" alt="Top 5 Web Development Trends" width="500px" height="200px"><br>
+    <a class="col" href="https://www.geeksforgeeks.org/blogs/top-web-development-trends/">Read More</a> <br> <br>
+    </article>
+    <article class="blog-post"></article>
+    <h2>Benefits of Learning Programming</h2> <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhAt6V8pEbMBJDmNewgxdnrPpGSDGjo3BX0Sh_n0a3nA&s=10" alt="Benefits of Learning Programming" width="500px" height="200px"><br>
+    <a class="col" href="https://www.phoenix.edu/articles/it/the-benefits-of-learning-to-code.html">Read More</a> <br>
+    </article>
+    </section>
+</body>
+</html>
