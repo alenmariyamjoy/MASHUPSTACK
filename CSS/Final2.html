@@ -28,15 +28,17 @@
             background: linear-gradient(to bottom, lightsteelblue, peachpuff);
         }
         form{
-            padding: 60px;
+            padding: 50px;
+            vertical-align: middle;
+            margin: middle;
         }
         
         input.sub{
             background-color: #e2583e;
             color: white;
             text-align: center;
-            width: 50%;
-            padding: 12px;
+            width: 100%;
+            padding: 10px;
         }
         input.no{
             width: 20px;
@@ -44,20 +46,22 @@
         input[type="email"],
         input[type="password"]{
             padding: 10px;
-            width: 50%;
-        }
-         @media (max-width: 800px) {
-        td {
-            display: block;
             width: 100%;
+            text-align: center;
         }
-        td.left {
-            display: none;
-        }
-        form {
-            padding: 30px 20px;
-        }
+        @media (max-width: 800px) {
+    td {
+        width: 100%;
     }
+    td.left {
+        display: none;
+    }
+    form{
+    padding: 50px;
+    vertical-align: middle;
+    margin: middle;
+}
+}
     </style>
 </head>
 <body>
